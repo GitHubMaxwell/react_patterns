@@ -1,0 +1,16 @@
+.contact-container {
+  padding: 4em 2em;
+  justify-content: center;
+  .contact-text {
+    padding: 1em;
+    color: white;
+    background: rgb(143, 0, 115);
+    border-radius: 10px;
+    i {
+      margin-right: 1em;
+    }
+    @include mediaTablet {
+      padding: 3em;
+    }
+  }
+}

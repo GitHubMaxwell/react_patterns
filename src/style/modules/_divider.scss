@@ -1,0 +1,23 @@
+.divider {
+  color: white;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 200px;
+  background-image: linear-gradient(to top right, rgb(143, 0, 115), rgb(255, 0, 132));
+  // h2 {
+  //   font-size:2em;
+  // }
+  // p {
+  //   font-size:1.5em;
+  // }
+  @include mediaMd {
+    h2 {
+      font-size: 4em;
+      margin-bottom: 0.5em;
+    }
+    p {
+      font-size: 2em;
+    }
+  }
+}

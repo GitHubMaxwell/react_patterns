@@ -1,0 +1,56 @@
+.hero {
+  position: relative;
+  background-color: white;
+  img {
+    width: 100%;
+    opacity: 0.2;
+  }
+  .text-container {
+    text-align: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    h1 {
+      font-size: 1.3em;
+      line-height: 1.4em;
+      margin-bottom: 0.5em;
+    }
+    .btn-hero {
+      justify-content: center;
+      align-items: center;
+      height: 60px;
+      width: 170px;
+      border-radius: 10px;
+      background: $hover-cta-color;
+      color: set-text-color($primary-text-color);
+      &:hover,
+      &:focus {
+        background: rgb(162, 0, 130);
+      }
+    }
+  }
+}
+@include mediaMd {
+  .hero {
+    .text-container {
+      top: 40%;
+      h1 {
+        font-size: 2em;
+      }
+    }
+  }
+}
+@include mediaLg {
+  .hero {
+    .text-container {
+      top: 45%;
+      h1 {
+        font-size: 3em;
+      }
+    }
+  }
+}

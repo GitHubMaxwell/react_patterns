@@ -1,0 +1,29 @@
+.footer-container {
+  padding: 2em;
+  flex-direction: column;
+  align-items: center;
+  background-color: $secondary-background-color-darker;
+  p,
+  a,
+  i {
+    color: set-text-color($primary-text-color);
+  }
+  i {
+    font-size: 2em;
+  }
+  ul {
+    margin-bottom: 1.5em;
+  }
+  li {
+    margin-right: 2em;
+    &:last-of-type {
+      margin-right: 0;
+    }
+  }
+  a:hover,
+  a:focus,
+  i:hover,
+  i:focus {
+    color: $hover-cta-color;
+  }
+}
